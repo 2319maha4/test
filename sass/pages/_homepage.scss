@@ -1,52 +1,225 @@
+// main-style
+
 .container {
-    max-width: 1200px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
-
-}
-
-.color-red {
-    color: $red;
 }
 
 .btn {
     display: block;
-    max-width: 205px;
+    max-width: 180px;
     padding: $btn-padding;
     font-size: $btn-font-size;
     outline: none;
     border: none;
     color: $btn-color;
     background-color: $btn-background;
+    font-family: 'Roboto';
     line-height: 1;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-weight: 400;
     width: 100%;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: $black;
+    text-transform: uppercase;
+    margin: 0 0 7px;
     text-align: center;
+}
 
-    &.btn-red {
-        background-color: $red;
-    }
+strong {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: $black;
+    line-height: 1;
+    margin: 0 0 15px;
+}
 
-    &.btn-green {
-        background-color: $green;
-    }
+p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: $grey;
+    line-height: 1.5;
+    word-spacing: 6px;
+    margin: 0 0 22px;
 
-    &.btn-small {
-    	width: 72px;
-    	font-size: 12px;
-    	padding: 10px 5px;
+    &.big-padding {
+        padding-right: 73px;
     }
 }
 
-.btn-register, .btn-login  {
-	border-radius: 3px;
+// about-us
 
+.about-us {
+    padding-top: 50px;
+
+    .about-us_content {
+        @include media ('>=tablet') {
+            display: flex;
+        }
+
+        .about-us_teaser {
+            padding: 0 75px 0 0;
+
+            img {
+                display: none;
+
+                @include media ('>=tablet') {
+                    display: block;
+                    min-width: 388px;
+                    width: 100%;
+                    height: 390px;
+                    margin-left: 16px;
+                }
+            }
+        }
+
+        .about-us_text {
+            max-width: 690px;
+            width: 100%;
+
+            span {
+                display: block;
+                font-family: 'Raleway';
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+                line-height: 1.3;
+                margin: -8px 0 23px;
+
+                &.first-title {
+                    margin: 0 0 10px;
+                }
+            }
+        }
+
+        .about-us-text-float {
+            img {
+                width: 180px;
+                height: 184px;
+                float: right;
+            }
+        }
+
+        .about-us_advantages {
+            list-style: square outside;
+            color: $blue;
+            padding-left: 11px;
+
+            li span {
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: 400;
+                color: $grey;
+                line-height: 1.5;
+                word-spacing: 6px;
+                margin: 0 0 2px -4px;
+            }
+        }
+    }
 }
 
+// seotoaster-users
+
+.seotoaster-users {
+    background: $light-grey;
+
+    .who-uses-seotoaster {
+        display: block;
+
+        @include media ('>=tablet') {
+            display: flex;
+            padding: 75px 0 0;
+            margin: 0 -15px;
+        }
+
+        .col {
+            width: 100%;
+
+            @include media ('>=tablet') {
+                width: 33.3%;
+            }
+
+            &.col-left {
+                text-align: center;
+
+                @include media ('>=tablet') {
+                    text-align: left;
+                }
+            }
+
+            &.col-center {
+                display: none;
+
+                @include media ('>=tablet') {
+                    display: block;
+                    padding: 95px 95px 0;
+                }
+            }
+
+            &.col-right {
+                text-align: center;
+
+                @include media ('>=tablet') {
+                    text-align: right;
+                }
+
+                .col-item_title {
+                    flex-direction: row-reverse;
+                }
+            }
+
+        }
+
+        .col-item {
+            margin: 0 0 30px;
+
+            @include media ('>=tablet') {
+                margin: 0 0 87px;
+            }
+
+            .col-item_title {
+
+                @include media ('>=tablet') {
+                    display: flex;
+                }
+            }
+
+            .col-item-img {
+                margin: 2px;
+
+                @include media ('>=tablet') {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 4px 0 0;
 
 
+                    &.right {
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+        }
 
+        strong {
+            display: block;
+            align-self: center;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
 
+        p {
+            letter-spacing: 1px;
+            padding: 0 50px;
 
-
+        }
+    }
+}

@@ -2,14 +2,11 @@
 // Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
 // Color names - http://name-of-color.com/
 
-$black: #252323;
+$black: #000000;
 $white: #ffffff;
-$green: #8bc34a;
-$red: #e74c3c;
-$dark-blue: #263238;
-$blue: #b0bec5;
-$orange: #ffa726;
-$gray: #dcdcdc;
+$blue: #6556df;
+$grey: #898989;
+$light-grey: #f0f0f0;
 
 $base-font-sans-serif: 'Roboto', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 
@@ -17,10 +14,10 @@ $base-font-sans-serif: 'Roboto', 'Arial', 'Helvetica Neue', 'Helvetica', sans-se
 $rem-base: 15px;
  
 // Body
-$base-text-color: $gray;
-$base-background-color: #f4f6f5;
-$font-size-base: 16px;
-$line-height-base: 1.2;
+$base-text-color: $grey;
+$base-background-color: $white;
+$font-size-base: 14px;
+$line-height-base: 1.5;
 $base-font-family: $base-font-sans-serif !default;
 
 $vertical-rhythm: ($line-height-base * 1em); 
@@ -28,31 +25,32 @@ $vertical-rhythm: ($line-height-base * 1em);
 $base-min-width: 320px;
 
 // Liks
-$base-link-color: $green;
+$base-link-color: $white;
 
 // Buttons 
 $btn-color: $white;
-$btn-background: $dark-blue;
-$btn-padding: 10px 20px;
-$btn-font-size: 15px;
+$btn-background: $blue;
+$btn-padding: 20px;
+$btn-font-size: 20px;
 
 // Forms
 $form-element-padding: $btn-padding !default;
-$form-element-border-color: $white;
-$form-element-focus-border-color: $white;
-$placeholder-color: #707070;
-$placeholder-font-size: 15px;
+$form-element-border-color: #f3f3f3;
+$form-element-focus-border-color: #f3f3f3;
+$placeholder-color: #f0f0f0;
+$placeholder-font-size: 18px;
 
 // Headers
-$h1-font-size: 35px;
-$h2-font-size: 30px;
-$h3-font-size: 20px;
+$h1-font-size: 46px;
+$h2-font-size: 24px;
+$h3-font-size: 18px;
 $h4-font-size: 14px;
 $h5-font-size: 12px;
 $h6-font-size: 10px;
 
 $headings-font-family: inherit !default;
-$headings-color: $dark-blue;
+$headings-color: $black;
 
 
 $animation-speed: 0.3s;
+
